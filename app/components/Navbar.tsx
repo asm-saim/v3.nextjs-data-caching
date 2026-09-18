@@ -1,6 +1,21 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
+  const links = (
+    <>
+      <li>
+        <Link href="/">Home</Link>
+      </li>
+      <li>
+        <Link href="/posts">Posts</Link>
+      </li>
+      <li>
+        <Link href="/dashboard">Dashboard</Link>
+      </li>
+    </>
+  );
+
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -19,25 +34,15 @@ const Navbar = () => {
             </svg>
           </div>
           <ul tabIndex={-1} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+            {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link href="/" className="btn btn-ghost text-xl">
+          Next JS
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn">Button</a>
