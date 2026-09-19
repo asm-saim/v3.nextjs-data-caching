@@ -1,8 +1,11 @@
+import { cache } from "next/dist/server/use-cache/use-cache-wrapper";
 import Products from "../components/Products";
 
 //Fetching data:
 const getProducts = async () => {
   const res = await fetch("http://localhost:3001/products");
+//   const res = await fetch("http://localhost:3001/products", { cache: "force-cache" });
+//   const res = await fetch("http://localhost:3001/products", { cache: "no-store" });
   return res.json();
 };
 
