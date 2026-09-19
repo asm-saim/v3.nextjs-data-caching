@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "category": "Electronics",
+      "price": 59.99,
+      "rating": 4.5,
+      "stock": 25,
+      "description": "Comfortable wireless headphones with clear sound, deep bass, and long-lasting battery life."
+    },
+    {
+      "id": 2,
+      "name": "Mechanical Keyboard",
+      "category": "Electronics",
+      "price": 79.99,
+      "rating": 4.7,
+      "stock": 18,
+      "description": "Durable mechanical keyboard with responsive keys, RGB lighting, and a comfortable typing experience."
+    },
+    {
+      "id": 3,
+      "name": "Running Shoes",
+      "category": "Footwear",
+      "price": 64.99,
+      "rating": 4.3,
+      "stock": 32,
+      "description": "Lightweight running shoes designed with breathable materials and cushioned soles for everyday comfort."
+    },
+    {
+      "id": 4,
+      "name": "Laptop Backpack",
+      "category": "Accessories",
+      "price": 39.99,
+      "rating": 4.6,
+      "stock": 20,
+      "description": "Spacious and water-resistant backpack with a dedicated laptop compartment and multiple storage pockets."
+    },
+    {
+      "id": 5,
+      "name": "Smart Watch",
+      "category": "Electronics",
+      "price": 99.99,
+      "rating": 4.4,
+      "stock": 15,
+      "description": "Modern smartwatch with fitness tracking, heart-rate monitoring, notifications, and a bright display."
+    },
+    {
+      "id": 6,
+      "name": "Cotton T-Shirt",
+      "category": "Clothing",
+      "price": 19.99,
+      "rating": 4.2,
+      "stock": 50,
+      "description": "Soft and breathable cotton T-shirt with a comfortable fit, suitable for everyday casual wear."
+    }
+  ]
+}
