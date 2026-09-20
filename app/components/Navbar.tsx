@@ -1,7 +1,11 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { use } from "react";
+import { UserContext } from "../UserContext/UserContext";
 
 const Navbar = () => {
+  const user = use(UserContext);
+  console.log("hello from navbar", user);
   const links = (
     <>
       <li>

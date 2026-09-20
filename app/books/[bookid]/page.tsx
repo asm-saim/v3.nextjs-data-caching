@@ -1,6 +1,6 @@
 import { IBooks } from "@/types";
 
-//generateStaticParams:
+//generateStaticParams: dynamic pages should be generated statically ahead of time.
 export async function generateStaticParams() {
   const res = await fetch("http://localhost:3001/books");
   const books = await res.json();
