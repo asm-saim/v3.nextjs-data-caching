@@ -1,4 +1,12 @@
+'use client'
+import useUsr from "../hooks/useUsr";
+
 const Products = ({ product }) => {
+  
+    //custom hooks:
+  const fruits = useUsr();
+  console.log("hello from products", fruits);
+
   return (
     <div className="card card-border bg-base-100 w-96">
       <div className="card-body">
