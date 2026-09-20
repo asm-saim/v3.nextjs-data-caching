@@ -1,5 +1,15 @@
 import { IBooks } from "@/types";
 
+//generateStaticParams:
+export async function generateStaticParams() {
+  const res = await fetch("http://localhost:3001/books");
+  const books = await res.json();
+
+  return books.map((book: { id: number }) => ({
+    id: String(book.id),
+  }));
+}
+
 const BookPage = async ({ params }: { params: Promise<{ bookid: string }> }) => {
   const { bookid } = await params;
 
