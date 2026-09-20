@@ -13,9 +13,12 @@ const page = async () => {
 
   return (
     <div>
-      {books.map((book) => (
-        <Books key={book.id} books={book}></Books>
-      ))}
+      <h1>Books: {books.length}</h1>
+      <div className="grid grid-cols-3 gap-5">
+        {books.map((book) => (
+          <Books key={book.id} book={book}></Books>
+        ))}
+      </div>
     </div>
   );
 };
