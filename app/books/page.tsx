@@ -1,6 +1,7 @@
 import Books from "../components/Books";
 
 const getBooks = async () => {
+  //ISR:
   const res = await fetch("http://localhost:3001/books", { next: { revalidate: 20 } });
   if (!res.ok) {
     throw new Error("Failed to load data");

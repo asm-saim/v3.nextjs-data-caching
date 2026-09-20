@@ -4,6 +4,7 @@ import Products from "../components/Products";
 //Fetching data:
 const getProducts = async () => {
   const res = await fetch("http://localhost:3001/products");
+  //SSR, SSG:
   //   const res = await fetch("http://localhost:3001/products", { cache: "force-cache" });
   //   const res = await fetch("http://localhost:3001/products", { cache: "no-store" });
   return res.json();
